@@ -1,7 +1,7 @@
 -- Week 5 Database Assignment: Database Indexing and Security
 
--- Question 1: Drop an index named IdxPhone from the customers table
-DROP INDEX IdxPhone ON customers;
+-- Question 1: Drop an index named IdxPhone from the customers table (with IF EXISTS)
+DROP INDEX IF EXISTS IdxPhone ON customers;
 
 -- Question 2: Create a user named bob with password 'S$cu3r3!' restricted to localhost
 CREATE USER 'bob'@'localhost' IDENTIFIED BY 'S$cu3r3!';
